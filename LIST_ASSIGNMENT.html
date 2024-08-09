@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+    <!-- ordered list -->
+     <p>INGREDIENTS</p>
+     <ol type="a">
+        <li>Yam</li>
+        <li>Mellon</li>
+        <dl>
+            <dt><b>Mellon</b></dt>
+            <dd>Mellon is of different categories,there are dried mellon,which can be added in preparing Ewedu or Okra, there are watered mellon which can be use to make Egusi soup</dd>
+        </dl>
+        <li>Ugwu</li>
+        <dl>
+            <dt><b>Ugwu</b></dt>
+            <dd>Ugwu is one the vegetables used in the whole nigeria irrespective of the tribe because of its versatility</dd>
+        </dl>
+        <li>Palm oil</li>
+        <li>Locust beans</li>
+        <li>Onions</li>
+     </ol>
+    <!-- unordered list -->
+     <ul>
+        <li>Maggi</li>
+        <li>Fish</li>
+        <li>Ponmo</li>
+        <li>Salt</li>
+     </ul>
+     <!-- descriptive list -->
+      <dl>
+        <dt><b>How to make pounded yam with Egusi</b></dt>
+        <dd>After peeling and slicing the yam, wash it in a clean water,then pour it inside pot,and put it on fire for it to get cooked. Pound it with mortal and pestle when it get soften to your preferred texture. To make Egusi,slice your onion,put a pot on fire with some palm oil,pour the sliced onions inside,mix the mellon with water then our it inside the hot palm oil,add your seasoning,Maggi and salt,after a while,you can add the fish and ponmo,allow it to boil and our the Ugwu leaf after,cover it for some minutes for it to cooked,your pounded yam with Egusi is ready.</dd>
+    
+      </dl>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
